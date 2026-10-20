@@ -1,0 +1,2 @@
+# Preserve upstream notices exactly, including their original whitespace.
+packaging/licenses/** -whitespace

@@ -1,0 +1,255 @@
+[
+  {
+    "id": "S01",
+    "category": "short",
+    "source": "Yes.",
+    "meaning_checks": [
+      "Affirmative answer, no added commitment."
+    ],
+    "context": []
+  },
+  {
+    "id": "S02",
+    "category": "short",
+    "source": "Do not restart the database until the backup has been verified.",
+    "meaning_checks": [
+      "Do not restart yet.",
+      "Restart is gated on backup verification, not merely backup creation."
+    ],
+    "context": []
+  },
+  {
+    "id": "S03",
+    "category": "short",
+    "source": "The budget is twenty-five dollars, not fifty.",
+    "meaning_checks": [
+      "Budget is 25 dollars.",
+      "50 dollars is explicitly rejected."
+    ],
+    "context": []
+  },
+  {
+    "id": "S04",
+    "category": "short",
+    "source": "Please send the final report by October 31 at 3 p.m.",
+    "meaning_checks": [
+      "Final report deadline: October 31, 3 p.m.",
+      "By means no later than, not after."
+    ],
+    "context": []
+  },
+  {
+    "id": "S05",
+    "category": "short",
+    "source": "Dr. Smith approved version 3.5, but version 3.6 is still under review.",
+    "meaning_checks": [
+      "Smith approved 3.5.",
+      "3.6 is not yet approved."
+    ],
+    "context": []
+  },
+  {
+    "id": "S06",
+    "category": "short",
+    "source": "We are postponing the migration, not cancelling it.",
+    "meaning_checks": [
+      "Migration is delayed.",
+      "Migration is not cancelled."
+    ],
+    "context": []
+  },
+  {
+    "id": "S07",
+    "category": "short",
+    "source": "Keep it online until Friday.",
+    "meaning_checks": [
+      "It refers to the primary database.",
+      "Keep it online until Friday."
+    ],
+    "context": [
+      {
+        "original": "The primary database must remain available during the review.",
+        "translation": "검토 기간 동안 주 데이터베이스를 계속 사용할 수 있어야 합니다.",
+        "language": "en"
+      }
+    ]
+  },
+  {
+    "id": "S08",
+    "category": "short",
+    "source": "The change might be approved next week; it has not been approved yet.",
+    "meaning_checks": [
+      "Approval next week is possible, not certain.",
+      "No approval has happened yet."
+    ],
+    "context": []
+  },
+  {
+    "id": "L01",
+    "category": "long",
+    "source": "If we postpone the launch until the engineering team has completed the security review and the finance team has confirmed that the revised budget includes the additional testing costs and the customer support team has prepared the updated instructions for the people who are moving from the previous version to the new service and every regional manager has checked that the proposed schedule will work for their local customers and the operations team has verified that the backup system can restore all of the important customer records without losing any recent changes then we will release the product on October 31st and we will not charge existing customers an additional $50",
+    "meaning_checks": [
+      "Postponing the launch until all listed checks have completed is the condition, not merely completing checks.",
+      "Retain engineering security review, finance testing costs, support instructions, regional schedules and operations recovery without lost changes.",
+      "Then release October 31; existing customers will not be charged an additional $50."
+    ],
+    "context": []
+  },
+  {
+    "id": "L02",
+    "category": "long",
+    "source": "The revised proposal keeps the monthly subscription at twenty-five dollars for existing customers and introduces a separate fifty-dollar setup fee only for new business accounts, so the finance team should not apply that setup fee to renewals or interpret the subscription price as an annual charge.",
+    "meaning_checks": [
+      "25-dollar monthly subscription for existing customers.",
+      "50-dollar setup fee only for new business accounts, never renewals.",
+      "Not an annual charge."
+    ],
+    "context": []
+  },
+  {
+    "id": "L03",
+    "category": "long",
+    "source": "The support team may inspect the diagnostic logs that contain system events and request identifiers, but they must not copy customer message contents into the shared ticket, and the security team must remove any accidentally included access tokens before that ticket is sent to the external vendor.",
+    "meaning_checks": [
+      "Support may inspect system/request-id diagnostic logs.",
+      "Customer message contents must not enter the shared ticket.",
+      "Security removes leaked access tokens before external vendor transmission."
+    ],
+    "context": []
+  },
+  {
+    "id": "L04",
+    "category": "long",
+    "source": "Before the operations team starts the production upgrade, they must verify the new backup by restoring it in the test environment, compare the restored record counts with the source database, and obtain written approval from the service owner rather than assuming that a successful backup job proves recovery is possible.",
+    "meaning_checks": [
+      "All verification precedes production upgrade.",
+      "Restore backup in test and compare record counts.",
+      "Service owner written approval required; backup job success alone does not prove recoverability."
+    ],
+    "context": []
+  },
+  {
+    "id": "L05",
+    "category": "long",
+    "source": "The original launch date was Wednesday, but the customer asked us to move it to Friday because their training session will not finish until Thursday evening, and the product manager has agreed to change only the launch date while keeping the price and the support commitment exactly as previously approved.",
+    "meaning_checks": [
+      "Move Wednesday launch to Friday at customer request.",
+      "Training finishes Thursday evening.",
+      "Only date changes; price and support commitment remain unchanged."
+    ],
+    "context": []
+  },
+  {
+    "id": "L06",
+    "category": "long",
+    "source": "Unless the database owner explicitly approves the new retention policy, the team must continue keeping the existing backups for thirty days and must not replace them with a seven-day schedule, even though the storage team estimates that the shorter schedule would reduce costs by approximately forty percent.",
+    "meaning_checks": [
+      "Explicit owner approval is necessary to change retention.",
+      "Keep 30 days and do not replace with 7 days without approval.",
+      "40 percent estimated savings do not override the approval requirement."
+    ],
+    "context": []
+  },
+  {
+    "id": "L07",
+    "category": "long",
+    "source": "The discount applies to the first three monthly invoices for customers who sign the agreement before the end of November, but it does not reduce the one-time installation fee or extend the cancellation deadline, and the sales team must explain both exceptions before collecting the signed agreement.",
+    "meaning_checks": [
+      "Discount only first 3 monthly invoices, sign before end of November.",
+      "Installation fee and cancellation deadline are unchanged.",
+      "Sales explains both exceptions before collecting signed agreement."
+    ],
+    "context": []
+  },
+  {
+    "id": "L08",
+    "category": "long",
+    "source": "The engineering lead will prepare the technical checklist by Tuesday, the security lead will review it on Wednesday, and the operations manager will schedule the deployment only after both leads have signed it, while the account manager must notify the customer at least two working days before the actual deployment.",
+    "meaning_checks": [
+      "Engineering checklist Tuesday, security review Wednesday.",
+      "Operations schedules only after both signatures.",
+      "Account manager notifies customer at least 2 working days before actual deployment."
+    ],
+    "context": []
+  },
+  {
+    "id": "C01",
+    "category": "conditional",
+    "source": "If we postpone the launch until the security review is complete, then we can release the product safely without cancelling the project.",
+    "meaning_checks": [
+      "Launch postponement lasts until security review completion.",
+      "Then safe release is possible; project is not cancelled."
+    ],
+    "context": []
+  },
+  {
+    "id": "C02",
+    "category": "conditional",
+    "source": "Unless we receive written approval before Friday, do not deploy the change.",
+    "meaning_checks": [
+      "Do not deploy if written approval is not received before Friday.",
+      "Approval must be written; Friday deadline applies to approval."
+    ],
+    "context": []
+  },
+  {
+    "id": "C03",
+    "category": "conditional",
+    "source": "Provided that the backup has been verified before midnight, we may restart the server after the maintenance window begins.",
+    "meaning_checks": [
+      "Verified backup before midnight is the condition.",
+      "Restart permitted only after maintenance window starts; permission is not an obligation."
+    ],
+    "context": []
+  },
+  {
+    "id": "C04",
+    "category": "conditional",
+    "source": "If we wait until five p.m. before starting the migration, we will lose two hours, not four.",
+    "meaning_checks": [
+      "Waiting until 5 p.m. delays migration start.",
+      "Lost time is 2 hours, explicitly not 4."
+    ],
+    "context": []
+  },
+  {
+    "id": "C05",
+    "category": "conditional",
+    "source": "If the same defect appears after the release, roll back the application but do not delete any customer records.",
+    "meaning_checks": [
+      "Recurrence after release triggers application rollback.",
+      "Customer records must not be deleted."
+    ],
+    "context": []
+  },
+  {
+    "id": "C06",
+    "category": "conditional",
+    "source": "If we finish the review before October 31, charge twenty-five dollars rather than fifty.",
+    "meaning_checks": [
+      "Finishing review before October 31 is the condition.",
+      "Charge $25, not $50."
+    ],
+    "context": []
+  },
+  {
+    "id": "C07",
+    "category": "conditional",
+    "source": "If we pause the import until the network is stable, we must preserve the pending records rather than discard them.",
+    "meaning_checks": [
+      "Pause import until network stabilizes.",
+      "Pending records must be preserved, not discarded."
+    ],
+    "context": []
+  },
+  {
+    "id": "C08",
+    "category": "conditional",
+    "source": "Please tell us if the replica becomes unavailable after the primary server is restarted; do not restart both servers at once.",
+    "meaning_checks": [
+      "Report replica unavailability after primary restart.",
+      "Do not restart both simultaneously."
+    ],
+    "context": []
+  }
+]

@@ -1,0 +1,25 @@
+name: Bug report
+description: Report installation, audio, UI or translation problems
+body:
+  - type: markdown
+    attributes:
+      value: Do not include real meeting transcripts, recordings, credentials or private logs. Use synthetic examples.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: App version, macOS version, Mac chip/RAM, Ollama version, model names, downloaded app or source run
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

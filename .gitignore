@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# 회의 내용이 담긴 로그/요약 (민감 정보)
+logs/
+
+# 빌드 산물 (자동 재생성됨)
+audio_switch
+.audio_switch_hash
+zoomtrans.app/
+
+# 오버레이 창 위치/크기 (로컬 런타임 상태)
+.overlay_geom.json
+
+# Project environment and local UI previews
+.venv/
+output/
+.build-venv/
+build/
+dist/
+.claude/
+.codex/
+.agents/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.p8

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3E7CFF"/><stop offset=".55" stop-color="#3159DA"/><stop offset="1" stop-color="#3038A9"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70EFE0"/><stop offset="1" stop-color="#35BFD8"/></linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EAF2FF"/></linearGradient>
+  </defs>
+  <rect x="60" y="76" width="904" height="888" rx="210" fill="#182F80" opacity=".15"/>
+  <rect x="60" y="60" width="904" height="904" rx="210" fill="url(#tile)"/>
+  <rect x="64" y="64" width="896" height="896" rx="206" fill="none" stroke="#FFFFFF" stroke-opacity=".17" stroke-width="3"/>
+  <path d="M510 425H718Q822 425 822 529V666Q822 748 746 766L782 824Q789 838 773 833L682 774H510Q414 774 414 678V529Q414 425 510 425Z" fill="#172B88" opacity=".22" transform="translate(0 18)"/>
+  <rect x="414" y="425" width="408" height="349" rx="104" fill="url(#glass)"/>
+  <path d="M682 745L782 824L746 735Z" fill="#39C4D9"/>
+  <text x="665" y="710" text-anchor="middle" font-family="Apple SD Gothic Neo,Noto Sans KR,sans-serif" font-weight="700" font-size="156" fill="#143D7E">가</text>
+  <path d="M296 235H535Q646 235 646 346V491Q646 602 535 602H356L239 677Q224 687 229 668L252 590Q185 564 185 491V346Q185 235 296 235Z" fill="#182D8A" opacity=".20" transform="translate(0 18)"/>
+  <path d="M296 221H535Q646 221 646 332V477Q646 588 535 588H356L239 663Q224 673 229 654L252 576Q185 550 185 477V332Q185 221 296 221Z" fill="url(#paper)"/>
+  <path d="M330 495L392 317Q397 303 412 303H423Q438 303 443 317L505 495H457L445 456H389L377 495ZM401 417H433L417 360Z" fill="#315ED9"/>
+  <g fill="#B3D3FF"><rect x="702" y="227" width="17" height="39" rx="8.5"/><rect x="736" y="208" width="17" height="77" rx="8.5"/><rect x="770" y="218" width="17" height="57" rx="8.5"/></g>
+</svg>
