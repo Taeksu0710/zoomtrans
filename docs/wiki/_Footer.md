@@ -1,0 +1,1 @@
+ZoomTrans 0.1.0-preview.1 기준 · Apple Silicon / macOS 26 이상 · [릴리스](https://github.com/Taeksu0710/zoomtrans/releases) · [MIT 라이선스](https://github.com/Taeksu0710/zoomtrans/blob/main/LICENSE) · [외부 구성요소 고지](https://github.com/Taeksu0710/zoomtrans/blob/main/THIRD_PARTY_NOTICES.md)

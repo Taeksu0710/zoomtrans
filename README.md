@@ -2,6 +2,8 @@
 
 macOS 회의 소리를 영어 원문과 한국어 자막으로 보여주는 로컬 번역 앱입니다. 회의록을 저장하고, 종료 후 선택하면 요약을 만듭니다. Zoom 외에도 Mac에서 재생되는 회의·강의 소리를 입력으로 사용할 수 있습니다.
 
+📘 [사용자 Wiki — 설치·사용법·모델 설정·문제 해결·개발 안내](https://github.com/Taeksu0710/zoomtrans/wiki)
+
 ![ZoomTrans 자막 화면](docs/images/compact-light.png)
 
 **Preview · Apple Silicon · macOS 26 이상** — Intel Mac, Windows, Linux는 지원하지 않습니다. Python을 포함한 다운로드 앱을 제공하며, BlackHole·Ollama·AI 모델은 별도로 준비합니다. Zoom과 제휴하거나 Zoom에서 제공하는 앱이 아닙니다.
